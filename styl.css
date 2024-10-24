@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position:relative;
+    width: 200px;
+    height: 200px;
+}
+.kubik{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: 3px solid black;
+    margin: 20px;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+.kubik:hover{
+    padding: 50px;
+    background-color: rgb(226, 43, 198);
+    animation: rotate 3s;
+    transition: all;
+    transition-duration: 2s;
+}
+.container2{
+    position:relative;
+    border: 1px solid red;
+    width: 700px;
+    height: 100px;
+    margin: 20px;
+}
+.krug{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: red;
+    animation:  anime 2s infinite 3;
+}
+@keyframes anime{
+    0%{
+        transform:rotate(0%)
+    }
+    50%{
+        transform:rotate(50%)
+    }
+    100%{
+        transform:rotate(100%)
+    }
+}
+.container3{
+    position:relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% ;
+    border: 20px solid rgb(218, 218, 218);
+    margin: 10px;
+}
+
+
